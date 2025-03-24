@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://image.slidesdocs.com/responsive-images/background/intelligent-artificial-intelligence-blue-technology-powerpoint-background_728472461e__960_540.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: #fff;
+  }
+  
+  .card img {
+    border-radius: 50%;
+    border: 4px solid #fff;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card img:hover {
+    transform: scale(1.1);
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: #f39c12;
+  }
+  
+  p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+  }
+  
+  h3 {
+    margin-bottom: 0.5em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    font-size: 1em;
+    padding: 6px 12px;
+    border-radius: 50px;
+    background-color: #444;
+    transition: background-color 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: #f39c12;
+  }
+  
+  li i {
+    margin-right: 8px;
+  }
+  
+  .fa-html5 { color: #e34f26; }
+  .fa-css3-alt { color: #2965f1; }
+  .fa-react { color: #61dafb; }
+  .fa-laravel { color: #ff2d20; }
+  .fa-database { color: #4db33d; }
+  .fa-python { color: #3776ab; }
+  .fa-bootstrap { color: #563d7c; }
+  .fa-tailwindcss { color: #38b2ac; }
+  .fa-vector-square { color: #f24e1e; }
+  .fa-angular { color: #e23237; }
+  .fa-robot { color: #00c8c8; }
+  
+  a {
+    text-decoration: none;
+    color: #f39c12;
+    font-size: 1.1em;
+    margin: 10px 5px;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #fff;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .card {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.6em;
+    }
+  
+    h2 {
+      font-size: 1em;
+    }
+  
+    li {
+      font-size: 0.9em;
+      padding: 5px 10px;
+    }
+  
+    a {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    h1 {
+      font-size: 1.4em;
+    }
+  
+    h2 {
+      font-size: 0.9em;
+    }
+  
+    p {
+      font-size: 0.9em;
+    }
+  
+    li {
+      font-size: 0.85em;
+    }
+  
+    a {
+      font-size: 0.95em;
+    }
+  }
+  
