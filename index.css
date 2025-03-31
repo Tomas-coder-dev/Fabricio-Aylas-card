@@ -524,20 +524,33 @@ img {
   margin-bottom: var(--spacing-md);
 }
 
+/* Centramos los íconos de tecnologías */
 .project-tech {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-sm);
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: var(--spacing-md);
 }
 
-.project-tech span {
-  background-color: var(--color-background-alt);
-  color: var(--color-primary);
-  padding: 0.25rem 0.75rem;
-  border-radius: var(--border-radius-full);
-  font-size: 0.8rem;
-  font-weight: 500;
+/* Ajuste de tamaño/color para cada ícono */
+.project-tech .tech-item {
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Ejemplo para MySQL (opcional, si deseas color distinto a MongoDB) */
+.tech-item.mysql i {
+  color: #4479A1; /* MySQL brand color */
+}
+
+/* Íconos de proyecto con color */
+.project-demo i {
+  color: #4CAF50; /* Link: verde */
+}
+.project-code i {
+  color: #181717; /* GitHub: negro */
 }
 
 .project-links {
@@ -547,14 +560,6 @@ img {
 
 .project-links a {
   flex: 1;
-}
-
-/* Íconos de proyecto con color */
-.project-demo i {
-  color: #4CAF50; /* Link: verde */
-}
-.project-code i {
-  color: #181717; /* GitHub: negro */
 }
 
 /* ===================================
@@ -584,7 +589,7 @@ img {
   justify-content: center;
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: var(--border-radius-full);
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--transition-fast), transform var(--transition-fast);
   text-decoration: none;
@@ -600,16 +605,16 @@ img {
 
 /* Colores para cada ícono de contacto */
 .contact-links a .fa-envelope {
-  color: #D44638; /* Gmail / Correo */
+  color: #D44638;
 }
 .contact-links a .fa-github {
-  color: #181717; /* GitHub */
+  color: #181717;
 }
 .contact-links a .fa-linkedin {
-  color: #0077B5; /* LinkedIn */
+  color: #0077B5;
 }
 .contact-links a .fa-instagram {
-  color: #E1306C; /* Instagram */
+  color: #E1306C;
 }
 
 /* ===================================
