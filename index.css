@@ -438,9 +438,13 @@ img {
 /* ===================================
    Sección Proyectos
 =================================== */
+/* 
+   Se reduce el min-width de cada card para
+   evitar que se "rompa" en pantallas pequeñas
+*/
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: var(--spacing-lg);
 }
 
@@ -502,9 +506,8 @@ img {
   align-items: center;
 }
 
-/* Ejemplo para MySQL */
 .tech-item.mysql i {
-  color: #4479A1;
+  color: #4479A1; /* MySQL brand color */
 }
 
 .project-demo i { color: #4CAF50; }
@@ -568,76 +571,66 @@ img {
    Media Queries para Responsividad
 =================================== */
 
-/* Para pantallas hasta 992px (tablets) */
-@media (max-width: 992px) {
-  .hero-content {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-  
-  .hero-description {
-    margin: 0 auto;
-  }
-  
-  .hero-cta {
-    justify-content: center;
-  }
-  
-  .skills-grid {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  }
-  
-  .projects-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* Para pantallas hasta 768px (móviles/tablets pequeñas) */
+/* Hasta 768px (tablets vertical y móviles grandes) */
 @media (max-width: 768px) {
   .container {
     padding: 0 var(--spacing-md);
   }
   
-  .hero h1 {
-    font-size: 2.8rem;
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
   }
-  
-  .hero h2 {
-    font-size: 1.3rem;
-  }
-  
-  .skills-grid {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  }
-  
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .project-image {
-    height: 180px;
-  }
-}
 
-/* Para pantallas hasta 480px (móviles pequeños) */
-@media (max-width: 480px) {
   .hero h1 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
-  
+
   .hero h2 {
     font-size: 1.2rem;
   }
-  
+
   .hero-description {
     font-size: 1rem;
   }
-  
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  /* Grilla de proyectos en 1 columna */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+
   .nav-links {
-    display: none; /* Se puede implementar un menú hamburguesa en caso de necesitarlo */
+    /* Aquí podrías ocultar el menú para poner un menú hamburguesa si deseas */
+  }
+}
+
+/* Hasta 480px (móviles pequeños) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
   }
   
-  .container {
-    padding: 0 var(--spacing-sm);
+  .hero h2 {
+    font-size: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .project-content {
+    padding: var(--spacing-md);
   }
 }
