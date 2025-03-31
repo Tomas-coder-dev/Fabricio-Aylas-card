@@ -290,7 +290,6 @@ img {
   border: none;
 }
 
-/* Botón primario con gradiente */
 .btn-primary {
   background: linear-gradient(135deg, #2563eb, #1e40af);
   color: #ffffff;
@@ -301,7 +300,6 @@ img {
   color: #ffffff;
 }
 
-/* Botón secundario con gradiente */
 .btn-secondary {
   background: linear-gradient(135deg, #ffa726, #fb8c00);
   color: #ffffff;
@@ -411,66 +409,31 @@ img {
 
 .skill-item i {
   font-size: 2rem;
-  /* color por defecto se sobreescribe en clases específicas */
 }
 
 .skill-item span {
   font-weight: 500;
 }
 
-/* ===================================
-   Colores de marca para íconos de habilidades
-=================================== */
+/* Colores de marca para íconos de habilidades */
 /* Frontend */
-.skill-item.html i {
-  color: #E34F26; /* HTML */
-}
-.skill-item.css i {
-  color: #1572B6; /* CSS */
-}
-.skill-item.js i {
-  color: #F7DF1E; /* JavaScript */
-}
-.skill-item.react i {
-  color: #61DAFB; /* React */
-}
-.skill-item.angular i {
-  color: #DD0031; /* Angular */
-}
-.skill-item.bootstrap i {
-  color: #7952B3; /* Bootstrap */
-}
-.skill-item.tailwind i {
-  color: #06B6D4; /* Tailwind */
-}
-
+.skill-item.html i { color: #E34F26; }
+.skill-item.css i { color: #1572B6; }
+.skill-item.js i { color: #F7DF1E; }
+.skill-item.react i { color: #61DAFB; }
+.skill-item.angular i { color: #DD0031; }
+.skill-item.bootstrap i { color: #7952B3; }
+.skill-item.tailwind i { color: #06B6D4; }
 /* Backend */
-.skill-item.python i {
-  color: #3776AB; /* Python */
-}
-.skill-item.django i {
-  color: #092E20; /* Django */
-}
-.skill-item.laravel i {
-  color: #FF2D20; /* Laravel */
-}
-.skill-item.java i {
-  color: #007396; /* Java (Spring Boot) */
-}
-.skill-item.database i {
-  color: #47A248; /* MongoDB */
-}
-
+.skill-item.python i { color: #3776AB; }
+.skill-item.django i { color: #092E20; }
+.skill-item.laravel i { color: #FF2D20; }
+.skill-item.java i { color: #007396; }
+.skill-item.database i { color: #47A248; }
 /* Diseño & Herramientas */
-.skill-item.figma i {
-  color: #F24E1E; /* Figma */
-}
-.skill-item.ai i {
-  color: #9B59B6; /* AI Tools (aprox) */
-}
-.skill-item.git i {
-  color: #F05032; /* Git */
-}
+.skill-item.figma i { color: #F24E1E; }
+.skill-item.ai i { color: #9B59B6; }
+.skill-item.git i { color: #F05032; }
 
 /* ===================================
    Sección Proyectos
@@ -524,7 +487,7 @@ img {
   margin-bottom: var(--spacing-md);
 }
 
-/* Centramos los íconos de tecnologías */
+/* Centramos y estilizamos los íconos de tecnologías */
 .project-tech {
   display: flex;
   justify-content: center;
@@ -533,25 +496,19 @@ img {
   margin-bottom: var(--spacing-md);
 }
 
-/* Ajuste de tamaño/color para cada ícono */
 .project-tech .tech-item {
   font-size: 1.5rem;
   display: inline-flex;
   align-items: center;
 }
 
-/* Ejemplo para MySQL (opcional, si deseas color distinto a MongoDB) */
+/* Ejemplo para MySQL */
 .tech-item.mysql i {
-  color: #4479A1; /* MySQL brand color */
+  color: #4479A1;
 }
 
-/* Íconos de proyecto con color */
-.project-demo i {
-  color: #4CAF50; /* Link: verde */
-}
-.project-code i {
-  color: #181717; /* GitHub: negro */
-}
+.project-demo i { color: #4CAF50; }
+.project-code i { color: #181717; }
 
 .project-links {
   display: flex;
@@ -582,7 +539,6 @@ img {
   padding: 0;
 }
 
-/* Botones circulares con color de marca */
 .contact-links li a {
   display: inline-flex;
   align-items: center;
@@ -603,23 +559,16 @@ img {
   font-size: 1.8rem;
 }
 
-/* Colores para cada ícono de contacto */
-.contact-links a .fa-envelope {
-  color: #D44638;
-}
-.contact-links a .fa-github {
-  color: #181717;
-}
-.contact-links a .fa-linkedin {
-  color: #0077B5;
-}
-.contact-links a .fa-instagram {
-  color: #E1306C;
-}
+.contact-links a .fa-envelope { color: #D44638; }
+.contact-links a .fa-github { color: #181717; }
+.contact-links a .fa-linkedin { color: #0077B5; }
+.contact-links a .fa-instagram { color: #E1306C; }
 
 /* ===================================
-   Media queries responsividad
+   Media Queries para Responsividad
 =================================== */
+
+/* Para pantallas hasta 992px (tablets) */
 @media (max-width: 992px) {
   .hero-content {
     flex-direction: column-reverse;
@@ -627,24 +576,68 @@ img {
   }
   
   .hero-description {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
   
   .hero-cta {
     justify-content: center;
   }
-
-  .skills-container {
-    gap: var(--spacing-lg);
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   }
-
-  .project-card {
-    margin-bottom: var(--spacing-lg);
+  
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
   }
+}
 
-  .contact-links {
-    flex-wrap: wrap;
-    justify-content: center;
+/* Para pantallas hasta 768px (móviles/tablets pequeñas) */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-image {
+    height: 180px;
+  }
+}
+
+/* Para pantallas hasta 480px (móviles pequeños) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .nav-links {
+    display: none; /* Se puede implementar un menú hamburguesa en caso de necesitarlo */
+  }
+  
+  .container {
+    padding: 0 var(--spacing-sm);
   }
 }
