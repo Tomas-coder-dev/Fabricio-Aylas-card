@@ -3,38 +3,325 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fabricio Aylas</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <meta name="description" content="Portafolio profesional de Fabricio Aylas - Desarrollador Frontend y estudiante de Diseño y Desarrollo de Software">
+  <title>Fabricio Aylas | Frontend Developer</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Hoja de estilos -->
   <link rel="stylesheet" href="index.css" />
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="card">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Spider-Man.jpg/1200px-Spider-Man.jpg" alt="Fabricio Aylas">
-    <h1> 🕸️ Fabricio Aylas 🕸️ <sup>20</sup> </h1>
-    <h2>👾 Frontend 👾 | 💻 Estudiante 💻 | 🤖 IA 🤖</h2>
-    <p>Estudiante de Diseño y Desarrollo de Software con interés en diseño UI/UX y aplicaciones de Inteligencia Artificial.</p>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">F<span>A</span></div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Cambiar tema">
+          <i class="fas fa-moon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
 
-    <h3>Habilidades:</h3>
-    <ul>
-      <li><i class="fab fa-html5"></i> HTML5</li>
-      <li><i class="fab fa-css3-alt"></i> CSS3</li>
-      <li><i class="fab fa-react"></i> React.js</li>
-      <li><i class="fab fa-laravel"></i> Laravel</li>
-      <li><i class="fas fa-database"></i> MongoDB</li>
-      <li><i class="fab fa-python"></i> Python</li>
-      <li><i class="fab fa-python"></i> Django</li>
-      <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
-      <li><i class="fab fa-tailwindcss"></i> Tailwind CSS</li>
-      <li><i class="fas fa-vector-square"></i> Figma</li>
-      <li><i class="fab fa-angular"></i> Angular</li>
-      <li><i class="fas fa-robot"></i> Inteligencia Artificial</li>
-    </ul>
+  <main>
+    <!-- Sección Hero -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Fabricio Aylas <span class="age">20</span></h1>
+            <h2>Frontend Developer & UI/UX Enthusiast</h2>
+            <p class="hero-description">
+              Construyendo experiencias digitales con código limpio y diseño centrado en el usuario.
+              Especializado en desarrollo web moderno y aplicaciones de Inteligencia Artificial.
+            </p>
+            <div class="hero-cta">
+              <a href="#contact" class="btn btn-primary">Contáctame</a>
+              <a href="#projects" class="btn btn-secondary">Ver proyectos</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="profile-image-container">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Spider-Man.jpg/1200px-Spider-Man.jpg" 
+                alt="Fabricio Aylas - Desarrollador Frontend" 
+                class="profile-image"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h3>Enlaces de contacto:</h3>
-    <ul>
-      <li><a href="https://github.com/Tomas-coder-dev" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/fabricio-aylas/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-    </ul>
-  </div>
+    <!-- Sección Sobre mí -->
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Soy estudiante de Diseño y Desarrollo de Software con pasión por crear interfaces 
+              intuitivas y experiencias de usuario excepcionales. Mi enfoque combina principios 
+              sólidos de diseño UI/UX con desarrollo frontend moderno.
+            </p>
+            <p>
+              Actualmente, estoy explorando las aplicaciones de la Inteligencia Artificial 
+              en el desarrollo web y la experiencia de usuario. Mi objetivo es crear 
+              soluciones tecnológicas que sean tanto visualmente atractivas como funcionalmente 
+              eficientes.
+            </p>
+            <ul class="about-details">
+              <li>
+                <strong><i class="fas fa-graduation-cap"></i> Educación:</strong> 
+                Estudiante de Diseño y Desarrollo de Software
+              </li>
+              <li>
+                <strong><i class="fas fa-map-marker-alt"></i> Ubicación:</strong> 
+                Perú
+              </li>
+              <li>
+                <strong><i class="fas fa-language"></i> Idiomas:</strong> 
+                Español (Nativo), Inglés (Intermedio)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <h2 class="section-title">Habilidades</h2>
+        
+        <div class="skills-container">
+          <!-- Frontend -->
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skills-grid">
+              <div class="skill-item html">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item css">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item js">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item react">
+                <i class="fab fa-react"></i>
+                <span>React.js</span>
+              </div>
+              <div class="skill-item angular">
+                <i class="fab fa-angular"></i>
+                <span>Angular</span>
+              </div>
+              <div class="skill-item bootstrap">
+                <i class="fab fa-bootstrap"></i>
+                <span>Bootstrap</span>
+              </div>
+              <div class="skill-item tailwind">
+                <i class="fab fa-tailwindcss"></i>
+                <span>Tailwind CSS</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Backend -->
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skills-grid">
+              <div class="skill-item python">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-item django">
+                <i class="fab fa-python"></i>
+                <span>Django</span>
+              </div>
+              <div class="skill-item laravel">
+                <i class="fab fa-laravel"></i>
+                <span>Laravel</span>
+              </div>
+              <div class="skill-item java">
+                <i class="fab fa-java"></i>
+                <span>Spring Boot</span>
+              </div>
+              <div class="skill-item database">
+                <i class="fas fa-database"></i>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Diseño & Herramientas -->
+          <div class="skill-category">
+            <h3>Diseño & Herramientas</h3>
+            <div class="skills-grid">
+              <div class="skill-item figma">
+                <i class="fas fa-vector-square"></i>
+                <span>Figma</span>
+              </div>
+              <div class="skill-item ai">
+                <i class="fas fa-robot"></i>
+                <span>AI Tools</span>
+              </div>
+              <div class="skill-item git">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <h2 class="section-title">Proyectos destacados</h2>
+        <div class="projects-grid">
+          <!-- Proyecto 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/api/placeholder/400/300" alt="TecLunch - Restaurante con ChatBot">
+            </div>
+            <div class="project-content">
+              <h3>TecLunch</h3>
+              <p>
+                Plataforma para restaurante con chatbot integrado que recomienda comidas 
+                basadas en preferencias del usuario.
+              </p>
+              <div class="project-tech">
+                <span>Django</span>
+                <span>Spring Boot</span>
+                <span>React</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small project-demo">
+                  <i class="fas fa-link"></i> Demo
+                </a>
+                <a href="#" class="btn btn-small project-code">
+                  <i class="fab fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Proyecto 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/api/placeholder/400/300" alt="Ceditec">
+            </div>
+            <div class="project-content">
+              <h3>Ceditec</h3>
+              <p>
+                Plataforma integral desarrollada con Laravel y Tailwind CSS, enfocada 
+                en proporcionar soluciones tecnológicas eficientes.
+              </p>
+              <div class="project-tech">
+                <span>Laravel</span>
+                <span>Tailwind</span>
+                <span>MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small project-demo">
+                  <i class="fas fa-link"></i> Demo
+                </a>
+                <a href="#" class="btn btn-small project-code">
+                  <i class="fab fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Proyecto 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/api/placeholder/400/300" alt="LabSafe-inventory">
+            </div>
+            <div class="project-content">
+              <h3>LabSafe-inventory</h3>
+              <p>
+                Sistema de gestión de inventario para laboratorios que permite visualizar 
+                y administrar existencias eficientemente.
+              </p>
+              <div class="project-tech">
+                <span>Laravel</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small project-demo">
+                  <i class="fas fa-link"></i> Demo
+                </a>
+                <a href="#" class="btn btn-small project-code">
+                  <i class="fab fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto (sin footer) -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-content">
+          <ul class="contact-links">
+            <li>
+              <a href="mailto:aylasmorenof@gmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Tomas-coder-dev" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/fabricio-aylas/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/soy_tomxss/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Script para el cambio de tema -->
+  <script>
+    document.querySelector('.theme-toggle').addEventListener('click', function() {
+      document.body.classList.toggle('dark-theme');
+      const icon = this.querySelector('i');
+      if (icon.classList.contains('fa-moon')) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+    });
+  </script>
 </body>
 </html>
